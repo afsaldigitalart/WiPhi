@@ -27,7 +27,6 @@ logging.basicConfig(
     datefmt='%H:%M:%S'
 )
 
-
 def apMode(interface, ssid, chan, password, max_host):
 
     """
