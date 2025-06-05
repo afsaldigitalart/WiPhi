@@ -71,7 +71,10 @@ def apMode(interface, ssid, chan, password, max_host):
     "address = /allawnos.com/10.0.0.1\n"
     "address = /www.msftconnecttest.com/10.0.0.1\n"
     "address = /connectivitycheck.android.com/10.0.0.1\n"
-    "address = /conn-service-in-04.alaawnos.com/10.0.0.1\n")
+    "address = /conn-service-in-04.alaawnos.com/10.0.0.1\n"
+    "address=/captive.apple.com/10.0.0.1\n"
+    "address=/detectportal.firefox.com/10.0.0.1\n"
+    "address=/msftncsi.com/10.0.0.1\n")
     
 
     with open(r"configs/hostapd.conf", "w+") as config:
