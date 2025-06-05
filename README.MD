@@ -26,6 +26,17 @@ Using WiPhi on unauthorized networks or devices is **illegal and unethical**. Th
 - Clean shutdown and environment restoration.
 
 ---
+## 🎞️ Working
+
+[![Attacker's POV](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm95d3NzejA2bmoyOGo3MG1tMzFiODViaWFiYmJmNm54eG52NTJlciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j1N1jELhCXtdFQH00M/giphy.gif)](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm95d3NzejA2bmoyOGo3MG1tMzFiODViaWFiYmJmNm54eG52NTJlciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j1N1jELhCXtdFQH00M/giphy.gif)
+
+                            Attacker's POV
+
+[![Victim's POV](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3JncXhxamtuc3drajB4YWlyamNmZm5uNWE0NGJwMjdidWFyejdoMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o2w81PRDU6fgVafAfT/giphy.gif)](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3JncXhxamtuc3drajB4YWlyamNmZm5uNWE0NGJwMjdidWFyejdoMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o2w81PRDU6fgVafAfT/giphy.gif)
+
+            Victim's POV
+
+---
 
 ## 🧰 Requirements
 
